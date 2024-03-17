@@ -21,6 +21,7 @@ const handleOpenLink = () => {
 </script>
 
 <template>
+  {{ config }}
   <div class="card flex justify-between">
     <div class="link-info">
       <NuxtLink :to="`/dashboard/${link.shortKey}`" class="text-amber-500 font-bold text-2xl">/{{ link.shortKey }}</NuxtLink>
