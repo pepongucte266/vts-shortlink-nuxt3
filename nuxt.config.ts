@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      appUrl: process.env.App_URL,
+      appUrl: process.env.App_URL || 'https://vts-shortlink-nuxt3.vercel.app',
     }
   },
   devtools: { enabled: true },
