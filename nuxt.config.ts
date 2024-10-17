@@ -6,6 +6,6 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/supabase'],
-  supabase: { redirect: false }
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/supabase', "@nuxthub/core"],
+  supabase: { redirect: false , }
 })

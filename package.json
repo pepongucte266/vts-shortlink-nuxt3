@@ -16,8 +16,10 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@nuxthub/core": "^0.7.33",
     "@nuxtjs/supabase": "^1.1.7",
     "@nuxtjs/tailwindcss": "^6.11.4",
-    "sass": "^1.71.1"
+    "sass": "^1.71.1",
+    "wrangler": "^3.80.5"
   }
 }
