@@ -5,7 +5,7 @@ export default defineNuxtConfig({
       appUrl: process.env.App_URL || 'https://vts-shortlink-nuxt3.vercel.app',
     }
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/supabase', "@nuxthub/core"],
   supabase: { redirect: false , }
 })
