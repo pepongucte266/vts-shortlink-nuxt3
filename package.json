@@ -7,9 +7,11 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
+    "drizzle-orm": "^0.35.2",
     "nanoid": "^5.0.6",
     "nuxt": "^3.10.3",
     "vue": "^3.4.21",
@@ -19,6 +21,7 @@
     "@nuxthub/core": "^0.7.33",
     "@nuxtjs/supabase": "^1.1.7",
     "@nuxtjs/tailwindcss": "^6.11.4",
+    "drizzle-kit": "^0.26.2",
     "sass": "^1.71.1",
     "wrangler": "^3.80.5"
   }

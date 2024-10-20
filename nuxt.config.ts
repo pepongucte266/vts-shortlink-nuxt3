@@ -2,10 +2,18 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      appUrl: process.env.App_URL || 'https://vts-shortlink-nuxt3.vercel.app',
+      appUrl: process.env.App_URL || 'http://localhost:3000',
     }
   },
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/supabase', "@nuxthub/core"],
-  supabase: { redirect: false , }
+  supabase: { redirect: false , },
+  hub: {
+    database: true
+  },
+  nitro: {
+    experimental: {
+      tasks: true
+    }
+  }
 })
