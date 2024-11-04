@@ -15,5 +15,11 @@ export default defineNuxtConfig({
     experimental: {
       tasks: true
     }
-  }
+  },
+  $development: {
+    hub: {
+      remote: true
+    }
+  },
+  compatibilityDate: '2024-11-04',
 })

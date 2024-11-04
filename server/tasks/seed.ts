@@ -14,7 +14,7 @@ export default defineTask({
         createdAt: new Date()
       },
       {
-        name: 'Jane Doe',
+        name: 'Jane Doe v2',
         email: 'jane@example.com',
         password: 'password123',
         avatar: 'https://example.com/avatar/jane.png',
