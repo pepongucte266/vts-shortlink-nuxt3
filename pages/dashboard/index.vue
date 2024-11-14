@@ -2,9 +2,11 @@
 import { type Database } from '~/types/supabase';
 
   definePageMeta({
-    middleware: ['auth']
+    auth: {
+      unauthenticatedOnly: false,
+      navigateUnauthenticatedTo: '/auth'
+    }
   })
-
   const client = useSupabaseClient<Database>();
 
   const user = useSupabaseUser();

@@ -6,7 +6,12 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/supabase', "@nuxthub/core"],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/supabase',
+    "@nuxthub/core",
+    '@sidebase/nuxt-auth',
+  ],
   supabase: { redirect: false , },
   hub: {
     database: true
@@ -22,4 +27,14 @@ export default defineNuxtConfig({
     }
   },
   compatibilityDate: '2024-11-04',
+  auth: {
+    globalAppMiddleware: false,
+    baseURL: `http://localhost:${process.env.PORT || 3000}`,
+    provider: {
+      type: 'authjs',
+      trustHost: false,
+      defaultProvider: 'github',
+      addDefaultCallbackUrl: true
+    }
+  }
 })

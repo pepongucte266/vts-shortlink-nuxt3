@@ -18,4 +18,14 @@ CREATE TABLE `links` (
 	FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON UPDATE no action ON DELETE no action
 );
 --> statement-breakpoint
-CREATE UNIQUE INDEX `links_key_unique` ON `links` (`key`);
+CREATE UNIQUE INDEX `links_key_unique` ON `links` (`key`);--> statement-breakpoint
+CREATE TABLE `users` (
+	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	`name` text NOT NULL,
+	`email` text NOT NULL,
+	`password` text NOT NULL,
+	`avatar` text NOT NULL,
+	`created_at` integer DEFAULT CAST(strftime('%s', 'now') AS INTEGER) NOT NULL
+);
+--> statement-breakpoint
+CREATE UNIQUE INDEX `users_email_unique` ON `users` (`email`);

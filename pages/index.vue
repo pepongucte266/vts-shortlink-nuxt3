@@ -1,3 +1,9 @@
+<script setup lang="ts">
+definePageMeta({
+  auth: { unauthenticatedOnly: true, navigateAuthenticatedTo: '/' }
+})
+</script>
+
 <template>
   <section class="h-screen grid place-content-center">
     <div class="max-w-3xl mx-auto text-center">
@@ -17,10 +23,10 @@
 </template>
 
 <style lang="scss">
-  .heading {
-    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 189%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.heading {
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 189%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 </style>

@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-  import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid'
 import type { Database } from '~/types/supabase';
 
   const client = useSupabaseClient<Database>();

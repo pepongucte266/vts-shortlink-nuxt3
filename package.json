@@ -11,8 +11,10 @@
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
+    "@sidebase/nuxt-auth": "^0.6.7",
     "drizzle-orm": "^0.35.2",
     "nanoid": "^5.0.6",
+    "next-auth": "4.21.1",
     "nuxt": "^3.10.3",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
@@ -22,7 +24,6 @@
     "@nuxtjs/supabase": "^1.1.7",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "drizzle-kit": "^0.26.2",
-    "sass": "^1.71.1",
     "wrangler": "^3.80.5"
   }
 }

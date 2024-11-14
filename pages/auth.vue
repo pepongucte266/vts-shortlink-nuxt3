@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+  const { signIn } = useAuth()
 
   const supabaseAuth = useSupabaseClient();
 
@@ -15,9 +16,10 @@
   *created by: VTSON 10-03-10
   */
   const handleGithubLogin = async () => {
-    await supabaseAuth.auth.signInWithOAuth({
-      provider: 'github',
-    })
+    // await supabaseAuth.auth.signInWithOAuth({
+    //   provider: 'github',
+    // })
+    signIn('github')
   }
 
   /**
